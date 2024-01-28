@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BharatPe</title>
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz@16..144&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="top-bar">
+        <div id="logo" class="top-items">
+            <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/bharatpe-logo-new-transp.png" alt="logo">
+        </div>
+
+        <div id="nav-center" class="top-items">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Resources</a>
+            <a href="#">Press</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div id="login" class="top-items" >
+            <button class="login-button">
+                <span class="login-text">  
+                    <p>LOGIN</p>
+                </span>
+
+                <span class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+    <div class="item-2">
+        <div class="item-2-content">
+            <div class="item-2-text-box">
+                <p class="text-box-text1">Grow your <br> buisness with <br> <span style="color: rgba(43,123,255,255);">BharatPe</span> </p>
+                <p class="text-box-text2">One-stop fintechtrusted by 13+ million merchants in India to power their buisness grow</p>
+                <p class="text-box-text3">Download app</p>
+
+
+            <div class="download">
+                <button class="store" >
+                    <span class="icon">
+                        <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/play-store-icon.jpg" alt="playstore">
+                    </span>
+                    <span class="text">
+                        <p class="text1">Play Store</p>
+                    </span>
+                </button>
+
+                <button class="store" >
+                    <span class="icon">
+                        <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/app-store.jpg" alt="appstore">
+                    </span>
+                    <span class="text">
+                        <p class="text1">App Store</p>
+                    </span>
+                </button> 
+            </div>
+        </div>
+
+
+        <div class="item-2-image-box">
+            <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/home-desktop-banner.jpg">
+        </div>
+    </div>
+
+    <div class="item-2-circle">
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+    </div>
+    </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <div class="item-3">
+        <div class="item-3-heading">Numbers tell our story</div>
+        
+        <div class="item-3-content">
+
+        <div class="item-3-box">
+            <div class="item-3-box-image">
+                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/payment.png" >
+            </div>
+            <div class="item-3-box-text">
+                <p class="item-3-box-text1">Rs.1700+ Billion</p>
+                <p class="item-3-box-text2">TPV in Payments</p>
+            </div>
+        </div>
+
+        <div class="item-3-box">
+            <div class="item-3-box-image">
+                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/merchants.png">
+            </div>
+            <div class="item-3-box-text">
+                <p class="item-3-box-text1">Rs.1700+ Billion</p>
+                <p class="item-3-box-text2">TPV in Payments</p>
+            </div>
+        </div>
+
+        <div class="item-3-box">
+            <div class="item-3-box-image">
+                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/location-add.png">
+            </div>
+            <div class="item-3-box-text">
+                <p class="item-3-box-text1">Rs.1700+ Billion</p>
+                <p class="item-3-box-text2">TPV in Payments</p>
+            </div>
+        </div>
+
+        <div class="item-3-box">
+            <div class="item-3-box-image">
+                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/cr-mechant.png">
+            </div>
+            <div class="item-3-box-text">
+                <p class="item-3-box-text1">Rs.1700+ Billion</p>
+                <p class="item-3-box-text2">TPV in Payments</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+<!-- --------------------------------------------------------------------------------------------------------- -->
+
+    <div class="item-4">
+        <div class="heading-box">
+            <h1 class="item-4-heading1">Why BharatPe</h1>
+            <p class="item-4-heading2">We unlock the true potential of your business</p>
+        </div>
+
+        <div class="item-4-boxes">
+            <div class="item-4-box1">
+                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/why-bharat-pe-image.jpg">
+            </div>
+            <div class="item-4-box2">
+                <p class="item-4-box2-text1">The perfect match for your credit needs</p>
+                <p class="item-4-box2-text2">From making sure you are always stocked to opening another outlet around the block, we help your business scale greater heights through our range of business loans</p>
+            </div>
+            <div class="item-4-box3">
+                    <i class="fa-regular fa-circle"></i>
+                    <i class="fa-regular fa-circle"></i>
+                    <i class="fa-regular fa-circle"></i>
+                </div>
+        </div>
+
+        
+
+    </div>
+
+
+<!-- ------------------------------------------------------------------------- -->
+
+    <div class="item-5">
+        <h1 class="item-5-heading">Merchant Offerings</h1>
+
+        <div class="item-5-boxes1">
+            <button>Payments</button>
+            <button>Banking</button>
+            <button>Lending</button>
+        </div>
+
+        <div class="item-5-boxes2">
+            <div class="boxes2-content">
+
+                <div class="boxes2-images">
+                    <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/BharatPe-UPI-QR.jpg" >
+                </div>
+
+                <div class="boxes2-info">
+                    <h1 class="boxes2-info-heading">BharatPe QR</h1>
+                    <p class="boxes2-info-p">Accept payments anytime, anywhere from multiple payment apps for free</p>
+                    <p class="know-more">Know More
+                        <i><i class="fa-solid fa-chevron-right"></i></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="boxes2-content">
+                <div class="boxes2-images">
+                    <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/bharatPeswipe.jpg" >
+                </div>
+
+                <div class="boxes2-info">
+                    <h1 class="boxes2-info-heading">BharatPe Swipe</h1>
+                    <p class="boxes2-info-p">Accept fast payments from multiple debit and credit cards</p>
+                    <p class="know-more">Know More
+                        <i><i class="fa-solid fa-chevron-right"></i></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------------------------------------------------------------- -->
+
+    <div class="item-6">
+        <h1 class="item-6-heading">Consumer Offerings</h1>
+
+        <div class="item-6-boxes">
+
+            <div class="item-6-box1">
+                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/postPe.png">
+            </div>
+
+            <div class="item-6-box2">
+                <div class="item-6-box2-image">
+                    <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/Postpe-Logo_Full.png">
+                </div>
+                <div class="item-6-box2-text">India’s fastest growing BNPL product</div>
+
+                <div class="item-6-box2-subbox">
+
+                    <span class="subbox-image">
+                        <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/cred-limit.png">
+                    </span>
+                    <span class="subbox-text">
+                        <p class="subbox-text1">Upto to ₹10 lakhs credit limit</p>
+                    </span>
+                </div>
+
+                <div class="item-6-box2-subbox">
+                    <span class="subbox-image">
+                        <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/universal-us.png">
+                    </span>
+                    <span class="subbox-text">
+                        <p class="subbox-text1">QR, card machine and online</p>
+                    </span>
+                </div>
+
+                <div class="item-6-box2-subbox">
+                    <span class="subbox-image">
+                        <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/app-downl.png">
+                    </span>
+                    <span class="subbox-text">
+                        <p class="subbox-text1">15 Mn+ app downloads</p>
+                    </span>
+                </div>
+
+                <p class="item-6-more">Know More
+                    <i><i class="fa-solid fa-chevron-right"></i></i>
+                </p>
+
+            </div> 
+
+            <div class="item-6-box3">
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------------------------------------------------------------- -->
+
+    <div class="item-7">
+        <h1 class="item-7-heading">BharatPe Merchant Stories</h1>
+
+        <div class="item-7-content">
+
+            <div class="item-7-box">
+                <span class="item-7-box-video">
+                    <iframe src="https://www.youtube.com/embed/Rdl3tEF5lw0" frameborder="0" allowfullscreen></iframe>
+                </span>
+                <span class="item-7-box-text">
+                    <p class="box-text1">Shyam Rajpurohit</p>
+                    <p class="box-text2">Nashik, Maharashtra</p>
+                </span>
+            </div>
+
+            <div class="item-7-box">
+                <span class="item-7-box-video">
+                    <iframe src="https://www.youtube.com/embed/Rdl3tEF5lw0" frameborder="0" allowfullscreen></iframe>
+                </span>
+                <span class="item-7-box-text">
+                    <p class="box-text1">Mohd Razi</p>
+                    <p class="box-text2">Bhopal, Madhya Pradesh</p>
+                </span>
+            </div>
+
+            <div class="item-7-box">
+                <span class="item-7-box-video">
+                    <iframe src="https://www.youtube.com/embed/Rdl3tEF5lw0" frameborder="0" allowfullscreen></iframe>
+                </span>
+                <span class="item-7-box-text">
+                    <p class="box-text1">Surender Singh</p>
+                    <p class="box-text2">Gurugram, Haryana</p>
+                </span>
+            </div>
+        </div>
+
+        <div class="view-more">
+            <button>View More</button>
+        </div>
+    </div>
+
+<!-- ---------------------------------------------------------------------------- -->
+    <div class="item-8">
+        <h1 class="item-8-heading">Recent News</h1>
+
+        <div class="item-8-content">
+
+        <div class="item-8-box">
+            <p class="item-8-text1">December 26, 2023</p>
+            <p class="item-8-text2">BharatPe records 182% growth in revenue in FY23, EBITDA loss reduced by Rs. 158 Cr</p>
+            <p class="item-8-text1">BharatPe, India’s leading name in fintech, today announced its financial performance for the fiscal year 2023, showcasing substantial growth...</p>
+            <p class="item-8-know-more">Know More
+                <i><i class="fa-solid fa-chevron-right"></i></i>
+            </p>
+        </div>
+
+        <div class="item-8-box">
+            <p class="item-8-text1">November 28, 2023</p>
+            <p class="item-8-text2">BharatPe turns EBITDA positive: Clocks October 2023 as the first profitable month</p>
+            <p class="item-8-text1">BharatPe, one of India’s leading players in the fintech sector, today announced that it has turned EBITDA positive in October 2023.</p>
+            <p class="item-8-know-more">Know More
+                <i><i class="fa-solid fa-chevron-right"></i></i>
+            </p>
+        </div>
+
+        <div class="item-8-box">
+            <p class="item-8-text1">August 11, 2023</p>
+            <p class="item-8-text2">BharatPe launches BharatPe Swipe Android machine for merchants: Plans to double its POS network over the next 12 months</p>
+            <p class="item-8-text1">BharatPe, India’s leading name in fintech industry, today announced the launch of its new Android Point of Sale (POS) terminal.</p>
+            <p class="item-8-know-more">Know More
+                <i><i class="fa-solid fa-chevron-right"></i></i>
+            </p>
+        </div>
+
+    </div>
+    <div class="view-more">
+        <button>View More</button>
+    </div>
+    </div>
+
+<!-- -------------------------------------------------------------------------- -->
+
+    <div class="item-9">
+        <div class="item-9-content1">
+            <div class="item-9-box1">
+                <div class="item-9-box1-logo">
+                    <img src="https://bharatpe.com//wp-content/uploads/2023/02/Bharatpe-logo-footer.png" alt="logo">
+                </div>
+
+                <div class="item-9-box1-text">
+                    <p>BharatPe was started in 2018 with the mission to build a holistic FinTech platform for offline merchants and small businesses. Today, BharatPe offers a suite of simple, easy-to-use and secure fintech products including payments and business loans to its merchant partners. The company has an extensive network of 13+ million merchants across 450+ cities in the country. BharatPe’s consumer offering postpe is one of the fastest-growing products in the Buy-Now- Pay-Later industry.</p>
+                </div>
+
+                <div class="item-9-box1-download">
+                    <p>Download app from</p>
+                    <div class="item-9-box1-download-button">
+
+                        <button class="store" >
+                            <span class="icon">
+                                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/play-store-icon.jpg" alt="playstore">
+                            </span>
+                            <span class="text">
+                                <p class="text1">Play Store</p>
+                            </span>
+                        </button>
+            
+                        <button class="store" >
+                            <span class="icon">
+                                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/app-store.jpg" alt="appstore">
+                            </span>
+                            <span class="text">
+                                <p class="text1">App Store</p>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item-9-box2">
+                <ul class="item-9-list">
+                    <li class="list-heading">General</li>
+                    <li class="list-text"><a href="#">About Us</a></li>
+                    <li class="list-text"><a href="#">Careers</a></li>
+                    <li class="list-text"><a href="#">Press</a></li>
+                    <li class="list-text"><a href="#">Contact Us</a></li>
+                </ul>
+
+                <ul class="item-9-list">
+                    <li class="list-heading">Legal</li>
+                    <li class="list-text"><a href="#">Terms & Conditions</a></li>
+                    <li class="list-text"><a href="#">Privacy Policy</a></li>
+                    <li class="list-text"><a href="#">Grievance Redressal Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="item-9-box2">
+                <ul class="item-9-list">
+                    <li class="list-heading">Resources</li>
+                    <li class="list-text"><a href="#">Build With BharatPe</a></li>
+                    <li class="list-text"><a href="#">Transforming Bharat</a></li>
+                    <li class="list-text"><a href="#">Merchant Stories</a></li>
+                </ul>
+
+                <ul class="item-9-list">
+                    <li class="list-heading">Corporate Governance</li>
+                </ul>
+            </div>
+
+            <div class="item-9-box2">
+                <ul class="item-9-list">
+                    <li class="list-heading">Merchant Offerings</li>
+                    <li class="list-text"><a href="#">BharatPe QR</a></li>
+                    <li class="list-text"><a href="#">BharatPe Swipe</a></li>
+                    <li class="list-text"><a href="#">BharatPe Speaker</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="item-9-content2">
+            <div class="item-9-content2-logo">
+                <img src="https://bharatpe.com/wp-content/uploads/2023/05/postpe-logo-footer.svg" alt="">
+            </div>
+            <div class="item-9-content2-logo">
+                <img src="https://bharatpe.com/wp-content/uploads/2023/05/club-twelth-footer.svg" alt="">
+            </div>
+            <div class="item-9-content2-logo">
+                <img src="https://bharatpe.com/wp-content/uploads/2023/05/zilion-logo-footer.svg" alt="">
+            </div>
+            <div class="item-9-content2-logo">
+                <img src="https://bharatpe.com/wp-content/uploads/2023/05/trillion-loans.png" alt="">
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div>
+                <p class="bottom-text">© 2024 All Rights Reserved</p>
+            </div>
+
+        <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+</div>
+</body>
+</html>
