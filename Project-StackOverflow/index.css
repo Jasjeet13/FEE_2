@@ -1,0 +1,121 @@
+#logo{
+    margin-left: 80px;
+}
+
+#product-button{
+    transition: all;
+    font-size: 14px;
+    color: #878c9f;
+}
+
+#product-button:hover{
+    border-radius: 20px;
+    background: #e3e6e8;
+}
+
+#j-box{
+    background: #5c6bc0;
+}
+
+#top-bar{
+    border-top:#e59450 solid 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link{
+    font-size: 1.2em;
+}
+
+#nav-link:hover{
+    color: rgb(0,88,231);
+    background: rgb(232, 230, 230);
+}
+
+/* -------------------------------------------- */
+#side-bar{
+    /* width: 18%;  */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    border: rgba(0, 0, 0, 0.1) solid 2px;
+    /* border-bottom: rgba(0, 0, 0, 0.1) solid 2px; */
+
+    background: red;
+}
+
+#side-bar-text{
+    color: #1e1f20;
+}
+
+#sidebar-icon{
+    margin-right: 0.5em;
+}
+
+#looking-button{
+    border: #407bb6 solid 2px;
+    color: #407bb6;
+}
+
+#looking-button:hover{
+    background: #d6e8fa;
+
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+#ask-button{
+    background: #1b75d0;
+    color: white;
+    font-size: 14px;
+}
+
+#ask-button:hover{
+    background: #155ca2;
+    
+}
+
+#box-icon{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ae79f0;
+}
+
+#item-3-list li{
+    border: rgba(0, 0, 0, 0.1) solid 2px;
+    font-size: 12px;
+    
+}
+
+#item-4-list li{
+    font-size: 12px;
+    text-align: right;
+}
+
+#item-4-button{
+    background: #edf5fd;
+    font-size: 12px;
+    color: #478ecf;
+}
+
+#item-4-button:hover{
+    background: #d6e8fa;
+}
+
+/* ------------------------------------------------- */
+#heading{
+    background: #faecc6;
+    border: 2px solid #f7de9d;
+}
+
+#subtext{
+    background: #fdf7e7;
+    border: 2px solid #f7de9d;
+}
+
+#box-2{
+    border: rgba(0, 0, 0, 0.1) solid 2px;
+}
+
+#box-2-text{
+    border: rgba(0, 0, 0, 0.1) solid 2px;
+
+}
+

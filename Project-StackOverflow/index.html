@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id="top-bar">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <a class="navbar-brand" id="logo" href="#">
+                <img src="https://stackoverflow.design/assets/img/logos/so/logo-stackoverflow.svg" width="140" height="28">
+            </a>
+
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!--unorederd list for the rest of the items -->
+            <ul class="navbar-nav">
+
+                <!-- Products -->
+                <li class="nav-item">
+                <!-- <a class="nav-link active" aria-current="page" href="#">Products</a> -->
+                <button class="btn" id="product-button">Products</button>
+                </li>
+
+                <!-- Serach bar -->
+                <li>
+                    <form class="d-flex">
+                        <input class="form-control me-2 mr-3" type="search" placeholder="Search..." aria-label="Search" style="width: 870px;">
+                    </form>
+                </li>
+
+                <!-- J box -->
+                <li>
+                    <button class="btn mx-3" id="j-box">J</button>
+                            
+                </li>
+
+                <!-- icons -->
+                <li class="nav-item">
+                <a class="nav-link" href="#" ><i class="fa-solid fa-inbox" ></i></a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-trophy" ></i></a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-circle-question" ></i></a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-brands fa-stack-exchange" ></i></a>
+                </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- ------------------------------------------------------------------------------------------------- -->
+    <div class="container-fluid">
+        <div class="row mx-5">
+      <!-- ----------------------------------------Sidebar-left---------------------------------------- -->
+      <div class="col-2 sidebar" style="border-right: 2px solid rgba(0, 0, 0, 0.1);">
+        <ul class="list-unstyled mt-4 p-1">
+                <li class="list-group-item my-2"><a class="text-decoration-none" id="side-bar-text" href="#"><i class="fa-solid fa-house" id="sidebar-icon"></i>Home</a></li>
+                <li class="list-group-item my-2"><a class="text-decoration-none"  id="side-bar-text" href="#"><i class="fa-solid fa-q" id="sidebar-icon"></i>Questions</a></li>
+                <li class="list-group-item my-2"><a class="text-decoration-none" id="side-bar-text"  href="#"><i class="fa-sharp fa-solid fa-tags" id="sidebar-icon"></i>Tags</a></li>
+        </ul>
+  
+        <ul class="list-unstyled my-5 ">
+            <li class="list-group-item my-2"><a class="text-decoration-none"  id="side-bar-text" href="#"><i class="fa-solid fa-user-group" id="sidebar-icon"></i>Users</a></li>
+            <li class="list-group-item my-2"><a class="text-decoration-none"  id="side-bar-text" href="#"><i class="fa-solid fa-briefcase" id="sidebar-icon"></i>Companies</a></li>
+        </ul>
+  
+        <ul class="list-unstyled">
+            <li class="list-group-item my-2"><a class="text-decoration-none"  id="side-bar-text" href="#"><b>LABS</b></a></li>
+            <li class="list-group-item my-2"><a class="text-decoration-none"  id="side-bar-text" href="#"><i class="fa-solid fa-message" id="sidebar-icon"></i>Discussions</a></li>
+        </ul>
+  
+        <ul class="list-unstyled my-5">
+            <li class="list-group-item my-2"><a class="text-decoration-none"  id="side-bar-text" href="#"><b>COLLECTIVES</b></a></li>
+            <li class="list-group-item my-2"><a class="text-decoration-none" id="side-bar-text" href="#"><i class="fa-solid fa-star" id="sidebar-icon"></i>Explore</a></li>
+        </ul>
+  
+        <ul class="list-unstyled my-3">
+            <li class="list-group-item my-2"><a class="text-decoration-none"  id="side-bar-text"href="#"><b>TEAMS</b></a></li>
+        </ul>
+  
+        <ul class="list-unstyled my-3">
+            <button class="btn" id="looking-button">Looking for Teams?</button>
+        </ul>
+  
+      </div>
+      
+      <!-------------------------------------Main content--------------------------------------------------->
+      <div class="col-7">
+        <div class="content ">
+
+        <!-- Top text -->
+        <div class="hstack gap-3">
+            <div class="p-2">
+                <p class="my-3 fs-4">Top Questions</p>
+            </div>
+
+            <div class="p-2 ms-auto">
+                <button class="btn p-2" id="ask-button">Ask Question</button>
+            </div>
+
+        </div>
+
+        <!-- Box  -->
+
+        <div class="hstack gap-3 my-2 p-3" style="border: rgba(0, 0, 0, 0.1) solid 2px;">
+            <div class="col-1 my-4 mx-2 p-1">
+                <i class="fa-solid fa-magnifying-glass" id="box-icon"></i>
+            </div>
+            <div class="col-10">
+                <p><b>New search experience powered by AI</b></p>
+                <p style="font-size: 12px;">Stack Overflow is leveraging AI to summarize the most relevant questions and answers from the community, with the option to ask follow-up questions in a conversational format.
+                    <br>
+                    <span style=" color:#3f8bd9">Get early access</span></p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+        <!-- item -3 -->
+
+        <div class="hstack gap-3" style="border-bottom: rgba(0, 0, 0, 0.1) solid 2px;" >
+            <div class="p-2 ms-auto" >
+                <ul class="list-group d-flex flex-row my-2" id="item-3-list">
+                    <li class="list-group-item">Interesting</li>
+                    <li class="list-group-item"><span style="background: #155ca2; color: white;">167</span> Bountied</li>
+                    <li class="list-group-item">Hot</li>
+                    <li class="list-group-item">Week</li>
+                    <li class="list-group-item">Month</li>
+                </ul>
+            </div>
+          </div>
+
+        <!-- item-4 -->
+
+        <div class="hstack gap-3 m-2" style="border-bottom: rgba(0, 0, 0, 0.1) solid 2px;">
+                <div class="col" style="max-width: 15%;">
+                    <ul class="list-unstyled m-2" id="item-4-list">
+                        <li class="list-group-item">0 votes</li>
+                        <li class="list-group-item">1 answer</li>
+                        <li class="list-group-item">13 views</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <p class="m-2" style="color: #3d98e2; font-size: 18px;">Audio recording is not working in apple devices in next js app</p>
+                    <ul class="list-unstyled d-flex flex-row">
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">html</button></li>
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">typescript</button></li>
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">next.js</button></li>
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">audio</button></li>
+                        <!-- <li class="list-group-item"><button class="btn mx-1" id="item-4-button">audio-recording</button></li> -->
+                        <li class="list-group-item d-flex align-items-center ">
+                            <img src="https://i.stack.imgur.com/1z4bc.jpg?s=32&g=1" alt="Logo" width="20" height="20" class="mr-2" style="margin-left: 4em;border-radius: 3px;">
+                            <p style="font-size: 12px;margin-top: 12px;margin-left: 4px;"><span style="color: #3d98e2;">Nirav Vikani</span> <b>188</b> modified 1 min ago</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="hstack gap-3 m-2" style="border-bottom: rgba(0, 0, 0, 0.1) solid 2px;">
+                <div class="col" style="max-width: 15%;">
+                    <ul class="list-unstyled m-2" id="item-4-list">
+                        <li class="list-group-item">0 votes</li>
+                        <li class="list-group-item">0 answer</li>
+                        <li class="list-group-item">23 views</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <p class="m-2" style="color: #3d98e2; font-size: 18px;">Find horizontal space without geometry reader</p>
+                    <ul class="list-unstyled d-flex flex-row">
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">swift</button></li>
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">swiftui</button></li>
+                        <li class="list-group-item d-flex align-items-center ">
+                            <img src="https://i.stack.imgur.com/NgDsb.png?s=32&g=1" alt="Logo" width="20" height="20" class="mr-2" style="margin-left: 4em;border-radius: 3px;">
+                            <p style="font-size: 12px; margin-top: 12px;margin-left: 4px;"><span style="color: #3d98e2;">Jaxon Steinhower</span> <b>257</b> modified 1 min ago</p> 
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="hstack gap-3 m-2" style="border-bottom: rgba(0, 0, 0, 0.1) solid 2px;">
+                <div class="col" style="max-width: 15%;">
+                    <ul class="list-unstyled m-2" id="item-4-list">
+                        <li class="list-group-item">0 votes</li>
+                        <li class="list-group-item">0 answer</li>
+                        <li class="list-group-item">9 views</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <p class="m-2" style="color: #3d98e2; font-size: 18px;">vs code quick fix only shows spelling instead of create function</p>
+                    <ul class="list-unstyled d-flex flex-row">
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">visual-studio-code</button></li>
+                        <li class="list-group-item d-flex align-items-center ">
+                            <img src="https://i.stack.imgur.com/NxxWB.jpg?s=32&g=1" alt="Logo" width="20" height="20" class="mr-2" style="margin-left: 4em;border-radius: 3px;">
+                            <p style="font-size: 12px; margin-top: 12px;margin-left: 4px"><span style="color: #3d98e2;">TT.</span> <b>15.8K</b> modified 1 min ago</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="hstack gap-3 m-2" style="border-bottom: rgba(0, 0, 0, 0.1) solid 2px;">
+                <div class="col" style="max-width: 15%;">
+                    <ul class="list-unstyled m-2" id="item-4-list">
+                        <li class="list-group-item">0 votes</li>
+                        <li class="list-group-item">0 answer</li>
+                        <li class="list-group-item">16 views</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <p class="m-2" style="color: #3d98e2; font-size: 18px;">WEIRD problem inserting in database using Entity Framework in ASP.NET MVC using C#</p>
+                    <ul class="list-unstyled d-flex flex-row">
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">.net</button></li>
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">asp.net-mcv</button></li>
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">entity-framework</button></li>
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">razor</button></li>
+                        <li class="list-group-item d-flex align-items-center ">
+                            <img src="https://www.gravatar.com/avatar/b4779212f57ff2e9549ea90a4499c2d7?s=32&d=identicon&r=PG" alt="Logo" width="20" height="20" class="mr-2" style="margin-left: 4em;border-radius: 3px;">
+                            <p style="font-size: 12px;margin-top: 12px;margin-left: 4px"><span style="color: #3d98e2;">marc_s</span> <b>740K</b> modified 2 min ago</p>   
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="hstack gap-3 m-2" style="border-bottom: rgba(0, 0, 0, 0.1) solid 2px;">
+                <div class="col" style="max-width: 15%;">
+                    <ul class="list-unstyled m-2" id="item-4-list">
+                        <li class="list-group-item">0 votes</li>
+                        <li class="list-group-item">0 answer</li>
+                        <li class="list-group-item">11 views</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <p class="m-2" style="color: #3d98e2; font-size: 18px;">Error/Issue With GeoCoding Using OpenStreetMap Nominatim</p>
+                    <ul class="list-unstyled d-flex flex-row">
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">openstreetmap</button></li>
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">geocoding</button></li>
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">nomination</button></li>
+                        <li class="list-group-item d-flex align-items-center ">
+                            <img src="https://www.gravatar.com/avatar/71c0ed25bffde2e8d13b52a6f305db24?s=32&d=identicon&r=PG&f=y&so-version=2" alt="Logo" width="20" height="20" class="mr-2" style="margin-left: 4em;border-radius: 3px;">
+                            <p style="font-size: 12px; margin-top: 12px;margin-left: 4px;"><span style="color: #3d98e2;">bazali</span> <b>1</b> modified 2 min ago</p>
+                        </li>
+                            
+                    </ul>
+                </div>
+        </div>
+
+        <div class="hstack gap-3 m-2" style="border-bottom: rgba(0, 0, 0, 0.1) solid 2px;">
+                <div class="col" style="max-width: 15%;">
+                    <ul class="list-unstyled m-2" id="item-4-list">
+                        <li class="list-group-item">0 votes</li>
+                        <li class="list-group-item">0 answer</li>
+                        <li class="list-group-item">5 views</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <p class="m-2" style="color: #3d98e2; font-size: 18px;">How to handle single or multiple files from request using nodejs?</p>
+                    <ul class="list-unstyled d-flex flex-row">
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">node.js</button></li>
+                        <li class="list-group-item"><button class="btn mx-1" id="item-4-button">multer</button></li>
+                        <li class="list-group-item d-flex align-items-center ">
+                            <img src="https://www.gravatar.com/avatar/b7a55b053012455b8999274fb573576b?s=32&d=identicon&r=PG&f=y&so-version=2" alt="Logo" width="20" height="20" class="mr-2" style="margin-left: 4em;border-radius: 3px;">
+                            
+                            <li class="list-group-item"><p style="font-size: 12px;margin-top: 12px;margin-left: 4px;"><span style="color: #3d98e2;">Sai</span> <b>147</b>asked 3 min ago</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        
+
+
+        
+
+
+        </div>
+      </div>
+
+      <!-- Siderbar - right  -->
+    <div class="col-3 sidebar ">
+        <div class="row">
+            <div class="col-11 mt-4 p-2" id="heading">
+              <div class="title-box">
+                <h6>The Overflow Blog</h6>
+              </div>
+            </div>
+          </div>
+        <div class="row">
+            <div class="col-11 p-2" id="subtext">
+                <div class="content-box">
+                    <p><i class="fa-solid fa-pen"></i><span class="px-2" style="font-size: 14px;">Discussions now taking place across all tags on Stack Overflow</span></p>
+                    <p><i class="fa-solid fa-pen"></i><span class="px-2" style="font-size: 14px;">Building a PDF larger than the known universe</span></p>
+                </div>
+              </div>
+        </div>
+
+        <div class="row">
+            <div class="col-11 p-2" id="heading">
+              <div class="title-box">
+                <h6>Featured on Meta</h6>
+              </div>
+            </div>
+          </div>
+        <div class="row">
+            <div class="col-11 p-2" id="subtext">
+                <div class="content-box">
+                    <p><i class="fa-solid fa-message"></i><span class="px-2" style="font-size: 14px;">What would you like to change about the moderator election process?</span></p>
+                    <p><i class="fa-solid fa-message"></i><span class="px-2" style="font-size: 14px;">
+                        Data Dumps Releases: Timeline Updates and Clarification</span></p>
+                    <p><i class="fa-brands fa-stack-overflow"></i><span class="px-2" style="font-size: 14px;">
+                        Discussions update: Expansion to all tags</span></p>
+                    <p><i class="fa-brands fa-stack-overflow"></i><span class="px-2" style="font-size: 14px;">
+                        January 2024 post from Ryan Polk, Chief Product Officer</span></p>
+                    <p><i class="fa-brands fa-stack-overflow"></i><span class="px-2" style="font-size: 14px;">
+                        Temporary policy: Generative AI (e.g., ChatGPT) is banned</span></p>
+                </div>
+              </div>
+
+              
+              
+            </div>
+            <div class="row">
+              <div class="col-11 p-2" id="heading">
+                <div class="title-box">
+                  <h6>Hot Meta Posts</h6>
+                </div>
+              </div>
+            </div>
+          <div class="row">
+              <div class="col-11 p-2" id="subtext">
+                  <div class="content-box">
+                      <p><i class="fa-solid fa-2"></i><i class="fa-solid fa-3"></i><span class="px-2" style="font-size: 14px;">
+                        Should I flag a discussion that is actually a bad question?</span></p>
+                      
+                  </div>
+                </div>
+          </div>
+
+          <div class="row">
+            <div class="col-11 mt-4 p-2" id="box-2">
+              <div class="title-box">
+                <h6>Custom Filters</h6>
+              </div>
+            </div>
+          </div>
+        <div class="row">
+            <div class="col-11 p-2" id="box-2-text">
+                <div class="content-box">
+                    <a href="#" class="text-decoration-none">Create a custom filter</a>
+                </div>
+              </div>
+        </div>
+
+
+    </div>
+
+
+    </div>
+  </div>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
